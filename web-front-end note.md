@@ -68,11 +68,11 @@ webgl游戏
 
 ### 标签的分类
 
+https://www.runoob.com/tags/ref-byfunc.html
 
 
 
-
-## 文本类标签
+###### 文本类标签
 
 **链接**
 
@@ -105,5 +105,21 @@ webgl游戏
 或者使用实体字符，方便进行转义处理。&lt,&gt:<>
 
 标签分类
+
+
+
+###### 多媒体类标签
+
+###### 组织页面
+
+article&section：都可以有foot,header
+
+有序列表：
+
+无序列表：<ul>,可以嵌套
+
+定义列表：description list,<dl>；<dt>,term；<dd>；dt和dd多对多
+
+导航：nav，长什么样啊
 
 [HTML 标签列表(字母排序) | 菜鸟教程 (runoob.com)](https://www.runoob.com/tags/html-reference.html)
