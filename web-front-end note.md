@@ -70,7 +70,15 @@ webgl游戏
 
 https://www.runoob.com/tags/ref-byfunc.html
 
+``` html
+<!DOCTYPE html>
 
+
+```
+
+图片img注意alt是必需属性
+
+<blockquote>
 
 ###### 文本类标签
 
@@ -121,5 +129,79 @@ article&section：都可以有foot,header
 定义列表：description list,<dl>；<dt>,term；<dd>；dt和dd多对多
 
 导航：nav，长什么样啊
+
+相关推荐/广告<aside> 
+
+
+
+###### HTML表格
+
+表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+
+表格的表头使用 <th> 标签进行定义。
+
+大多数浏览器会把表头显示为粗体居中的文本。
+
+跨行:rowspan = "2"，到下一个tr，可以跳过这个td不重复写。
+
+https://www.runoob.com/html/html-tables.html
+
+###### 表单：需要填写
+
+<input type = "" placeholder(占位字符)>
+
+input type = "radio"，name相同时，是单选
+
+input type = "checkbox"
+
+属性checked（默认选中）
+
+选项比较多（下拉选择框）：<select name> <option value> ，默认选中selected
+
+按钮 <button type="submit"/"button">
+
+多行textarea placeholder
+
+https://www.w3school.com.cn/html/html_forms.asp
+
+
+
+###### 
+
+### html语义化：方便调试，盲人阅读
+
+![image-20220702222406891](web-front-end note.assets/image-20220702222406891.png)
+
+比如标题就用标题，不用p。
+
+
+
+### html可扩展性
+
+data-id
+
+meta标签 https://www.runoob.com/tags/tag-meta.html
+
+link （引入外部文件，例如css样式，图片（预先加载，优化性能））
+
+microdata：长篇加累版牍,不好理解。微标记来标注其中内容,让其容易识辨。方便浏览器进行网站的内容抓取。
+
+
+
+### html规范
+
+需要注意各个标签嵌套规则，语义。
+
+div不能放p里面。
+
+https://whatwg.org/validator/
+
+
+
+![image-20220702224806308](web-front-end note.assets/image-20220702224806308.png)
+
+![image-20220702224828744](web-front-end note.assets/image-20220702224828744.png)
+
+
 
 [HTML 标签列表(字母排序) | 菜鸟教程 (runoob.com)](https://www.runoob.com/tags/html-reference.html)
