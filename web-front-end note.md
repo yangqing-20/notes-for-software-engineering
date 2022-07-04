@@ -205,3 +205,188 @@ https://whatwg.org/validator/
 
 
 [HTML 标签列表(字母排序) | 菜鸟教程 (runoob.com)](https://www.runoob.com/tags/html-reference.html)
+
+
+
+
+
+# css
+
+在页面中使用css
+
+更推荐使用外链，方便代码维护
+
+
+
+![image-20220704213647923](web-front-end note.assets/image-20220704213647923.png)
+
+
+
+代码风格：推荐编码之间空一行
+
+调试css：elements style
+
+
+
+## 语法
+
+###### 选择器
+
+1. *：通配选择器，页面中所有的
+
+2. 标签选择器
+
+3. id选择器：#+id，id是唯一的
+
+4. 类选择器：.+class，class一个页面中可以出现多次
+
+5. Hypertext Reference：href  属性选择器：可以选择href以...开头/结尾的选择
+
+6. 伪类：
+
+   + 动态伪类：a:link/visited/hover/active。:focus(input)
+
+   + 结构性伪类：列表项中第一个/最后
+
+7. 组合器
+
+   ![image-20220704215548298](web-front-end note.assets/image-20220704215548298.png)
+
+亲子关系/后代关系可以多个连着 A B C
+
+
+
+###### 字体
+
+英文字体和中文如果不同，英文放前面
+
+@font-face{}
+
+字体大小：可以用相对大小，font-size 80%,2em
+
+字体粗细font-weight：还有关键字normal,bold。有的字体不支持某些字重
+
+行高line-height：如果没有单位，就是字体大小的数字倍数
+
+上面的属性，可以用font一起设置，可以缺省
+
+![image-20220704220458749](web-front-end note.assets/image-20220704220458749.png)
+
+
+
+###### 文字样式
+
+justify（两端对齐）/left/center/right
+
+spacing：letter-spacing,word-spacing
+
+text-indent首行缩进
+
+text-decoration：none/underline/line-through/overline
+
+white-space：换行符是否合并，是否和源代码一样，pre-wrap显示不下自动换行pre不换
+
+text-shadow
+
+
+
+###### 盒模型
+
+![image-20220704221402702](web-front-end note.assets/image-20220704221402702.png)
+
+padding：内边距，顺序，上右下左，如果是两个的话会自动设置。百分数是相对于宽度
+
+border：可以组合设置（各个边框颜色不同），可以通过border模拟三角形
+
+margin：auto 水平居中，可以为负的
+
+
+
+margin collapse:垂直方向上，相邻的边距会取较大的那个合并
+
+box-sizing：border-box
+
+overflow：内容溢出 visible/hidden/scroll
+
+min-width,max-width：限制
+
+em单位：字符
+
+
+
+**块级&行级：**
+
+![image-20220704223625401](web-front-end note.assets/image-20220704223625401.png)
+
+行级不能设置高度宽度
+
+inline-block，可以设置宽高，不被拆行（总是在一行，不会被拆）
+
+
+
+**盒子的效果**
+
+圆角：上右下左，也可以设置椭圆，百分比 a b c d/ e f g h（水平方向的半径&垂直方向）
+
+background-color
+
+background-image,background-repeat背景图像的排布
+
+background-position：top/left/center，bottom right，50% 50%（指把图片50%和盒子50%重合）
+
+background-size:cover/contain/percentage
+
+background-clip：背景覆盖范围
+
+以上属性可以用background一个属性写，可以缺省
+
+box-shadow（不占用空间）
+
+
+
+**行高和垂直对齐**
+
+![image-20220704233727963](web-front-end note.assets/image-20220704233727963.png)
+
+
+
+![image-20220704233805568](web-front-end note.assets/image-20220704233805568.png)
+
+line box内盒子摆放都是baseline对齐
+
+不同盒子baseline稍有不同
+
+
+
+###### 选择器的特异度
+
+高优先级的会覆盖低优先级的。有些属性会自动集成父元素的计算值。
+
+显式集成：例如给box-sizing :inherit，使它可以继承
+
+可利用这个特性实现代码复用。
+
+优先级计算：id*100 + 伪/class\*10 + 元素\*100
+
+
+
+![image-20220704234639955](web-front-end note.assets/image-20220704234639955.png)
+
+
+
+###### 值和单位
+
+![image-20220704234944965](web-front-end note.assets/image-20220704234944965.png)
+
+![image-20220704235006973](web-front-end note.assets/image-20220704235006973.png)
+
+rem中html font默认16px
+
+颜色：
+
++ #e1e1e1 两个十六进制数 rgb三个数连着
++ hsl
++ keyword  
++ alpha透明度：0-1，直接加rgb/hsl后面，变成rgba/hsla
+
+时间：s/ms
