@@ -390,3 +390,166 @@ rem中html font默认16px
 + alpha透明度：0-1，直接加rgb/hsl后面，变成rgba/hsla
 
 时间：s/ms
+
+
+
+https://bbs.huaweicloud.com/blogs/319622#:~:text=%E8%A1%8C%E7%BA%A7%E6%8E%92%E7%89%88%E4%B8%8A%E4%B8%8B%E6%96%87%E6%98%AF,%E4%B8%80%E8%A1%8C%E6%91%86%E4%B8%8D%E4%B8%8B%E5%B0%B1%E6%8D%A2%E8%A1%8C
+
+
+
+### 布局
+
+**flex-box:单向**
+
+流中的盒子只能全是行级/块级
+
+flex-wrap: wrap 允许换行
+
+flex-grow: 占满剩余空间的能力，剩余空间按比例分配
+
+flex-shrink: 0 不能收缩
+
+flex-basis:  content/percentage没有收缩没有扩展的时候
+
+也可以集合起来写
+
+.a ,.b ,.c{}
+
+
+
+![image-20220706170523396](web-front-end note.assets/image-20220706170523396.png)
+
+主轴方向 justify-content 主轴方向上靠头/尾/居中
+
+align-items:一行/列默认stretch
+
+align-self:给某个子元素加，.a
+
+align-content:每行整行都....
+
+order:从小到大排序，某个子元素
+
+
+
+**grid布局**
+
+划分网络：
+
+fr:份数
+
+1fr 1fr：平均分
+
+grid-template
+
+选择网格：gird-area
+
+命名网格线/网格区域：grid-template
+
+网格间距：grid-gap
+
+justify-content /align-items/aligh-self/justify-self：同flex-box
+
+
+
+**表格样式**
+
+【table是flex-box和grid之前的。一般布局更推荐用后面两个】
+
+display：table
+
+表格宽度
+
+边框
+
+![image-20220706210818331](web-front-end note.assets/image-20220706210818331.png)
+
+
+
+**浮动**
+
+float
+
+clear：不会和...重叠
+
+overflow：hidden 文字不会环绕图片，不会上下重叠，创建BFC
+
+**定位**
+
+position: relative 其他元素位置不受这个元素位置影响
+
+absolute：相对于最近的非static祖先定位
+
+fixed：相对于窗口
+
+
+
+**堆叠**
+
+z-index：大的在上
+
+![image-20220706214629215](web-front-end note.assets/image-20220706214629215.png)
+
+
+
+**动画**
+
+transform 
+
+perspective
+
+translate3d
+
+
+
+transition
+
+延迟
+
+
+
+keyframe
+
+
+
+### 响应式设计
+
+![image-20220706225334671](web-front-end note.assets/image-20220706225334671.png)
+
+适应手机
+
+一般情况下设置max-width:100%即可
+
+背景图片 contain,cover是裁掉多余的
+
+![image-20220706225420982](web-front-end note.assets/image-20220706225420982.png)
+
+
+
+媒体查询
+
+![image-20220706225501406](web-front-end note.assets/image-20220706225501406.png)
+
+
+
+图片使用，节省流量，使用不同尺寸的图片
+
+![image-20220706225614452](web-front-end note.assets/image-20220706225614452.png)
+
+
+
+屏幕较小时，改变根的font-size，然后其他的字体大小用rem单位
+
+
+
+层叠机制
+
+浏览器注释，浏览器怪癖
+
+浏览器前缀：特性不稳定时使用前缀
+
+
+
+
+
+
+
